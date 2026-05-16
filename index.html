@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Chamber of Commerce for Phone, Laptop, 
+    Gadgets and Accessories business. Connecting tech retailers, innovators, and consumers 
+    in a dynamic digital marketplace.">
+    <meta name="author" content="Meshack Amadi">
+    <title>MeshHub Chamber | Gadgets & Accessories Commerce</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <div class="page-container"></div>
+    <div class="site-header">
+      <!-- SVG site logo (inline optimized) -->
+      <img class="site-logo" src="images/mesh_hub.svg" width="50" height="50" alt="MeshHub Chamber logo - connecting gadgets and accessories business">
+      </img>
+      <span class="site-name">MeshHub Chamber</span>
+    </div>
+
+  <header>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav id="primaryNav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    
+    <!-- Section 1: About Me (About the chamber / company intro) -->
+    <section class="about-card">
+      <h2>About Me</h2>
+      <p>I am looking for a full time/part time job in the field of Technology, Finance, Health care or E-commerce. I have completed all the certificates with Google on Data Analytics, also a Bachelor Degree in Mathematics and Statistics in the prestigious University of Ignatius Ajuru University of Education.
+      A skilled Data Scientist with a strong background in data manipulation, statistical analysis, and data visualization. Proficient in using tools like Python, R, and SQL to extract and present valuable insights from complex datasets. Highly detail-oriented and capable of transforming data into actionable information for informed decision-making. Excellent problem-solving skills and a deep understanding of data-driven strategies to drive business success.
+    </p>
+      <p>We unite leading phone retailers, laptop innovators, gadget creators, and accessory brands. Join our ecosystem to accelerate commerce, foster partnerships, and shape the digital future.</p>
+    </section>
+
+    <section class="photo-section">
+      <h2>Member Spotlight</h2>
+      <div class="student-photo">
+        <img src="images/pics.jpg" alt="MeshHub ambassador - connecting gadgets and accessories business" width="300" height="300" loading="lazy">
+      </div>
+      <p class="photo-caption">Our chamber advocate — driving innovation in mobile & laptop commerce.</p>
+    </section>
+
+    <!-- Section 3: Web Certificate Courses (dynamic courses with filtering & credits) -->
+    <section class="courses-section">
+      <h2>Web Certificate Courses</h2>
+      <div class="filter-buttons">
+        <button id="filterAll" class="filter-btn active-filter">All</button>
+        <button id="filterCSE" class="filter-btn">CSE</button>
+        <button id="filterWDD" class="filter-btn">WDD</button>
+      </div>
+      <div class="courses-grid" id="coursesContainer">
+        <!-- Dynamically filled by JavaScript -->
+      </div>
+      <div class="credits-total" id="totalCreditsDisplay">
+        The total credits for course listed above is <span id="totalCredits">0</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-social">
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.26.82-.58 0-.287-.01-1.05-.015-2.06-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.123-.3-.535-1.52.117-3.16 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.64.24 2.86.118 3.16.768.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.62-5.476 5.92.43.37.824 1.102.824 2.22 0 1.602-.015 2.894-.015 3.287 0 .322.216.698.83.578C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C0.792 0 0 0.774 0 1.729v20.542C0 23.227 0.792 24 1.771 24h20.451c0.979 0 1.771-0.773 1.771-1.729V1.729C24 0.774 23.22 0 22.225 0z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; <span id="currentYear"></span> - Meshack Amadi • Rivers, Nigeria</p>
+    </div>
+    <div class="footer-modified">
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
