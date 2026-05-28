@@ -1,0 +1,213 @@
+/* Desktop & Tablet (768px and up) */
+
+@media screen and (min-width: 768px) {
+  /* Site Branding */
+  .site-branding {
+    padding: 0.8rem;
+    gap: 0.1rem;
+  }
+
+  .site-branding .site-logo {
+    width: 80px;
+    height: 120px;
+  }
+
+  .site-branding .site-name {
+    font-size: 2rem;
+  }
+
+  /* Header Layout */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    gap: 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #primaryNav {
+    display: block !important;
+    position: static;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  #primaryNav ul {
+    flex-direction: row;
+    gap: 1rem;
+    background: transparent;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  #primaryNav ul li a {
+    padding: 0.5rem 1rem;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  #primaryNav ul li a:hover {
+    border-left-color: transparent;
+    border-bottom-color: var(--primary-accent);
+    background-color: transparent;
+  }
+
+  #primaryNav ul li a.active {
+    border-left-color: transparent;
+    border-bottom-color: var(--primary-accent);
+    background-color: transparent;
+  }
+
+  /* Main Layout */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  h1 {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+  }
+
+  .view-controls {
+    grid-column: 1 / -1;
+  }
+
+  #membersContainer {
+    grid-column: 1 / -1;
+  }
+
+  /* Courses Grid - 3 columns for desktop */
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* List View override for desktop */
+  .courses-grid.list-view {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .courses-grid.list-view .course-card {
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.25rem;
+  }
+
+  .courses-grid.list-view .member-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .courses-grid.list-view .card-content {
+    padding: 0;
+  }
+
+  .courses-grid.list-view .membership-badge {
+    margin-right: 1rem;
+  }
+
+  /* Card Hover Effects */
+  .course-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Footer Layout */
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-social {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-copyright,
+  .footer-modified {
+    margin: 0;
+  }
+
+  .footer-copyright p,
+  .footer-modified p {
+    margin: 0.25rem 0;
+  }
+
+  .contact {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Large Desktop (1024px and up) */
+@media screen and (min-width: 1024px) {
+  .courses-grid {
+    gap: 2rem;
+  }
+  
+  .course-card .card-content h3 {
+    font-size: 1.35rem;
+  }
+  
+  .view-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Fix for grid/list toggle smooth transition */
+.courses-grid,
+.course-card {
+  transition: all 0.3s ease;
+}
+
+/* Accessibility focus styles */
+a:focus-visible,
+button:focus-visible,
+.view-btn:focus-visible {
+  outline: 3px solid var(--primary-accent);
+  outline-offset: 2px;
+}
+
+/* Ensure text never touches edges */
+@media screen and (max-width: 767px) {
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .courses-grid.list-view .course-card {
+    grid-template-columns: 70px 1fr;
+    gap: 0.75rem;
+  }
+  
+  .courses-grid.list-view .membership-badge {
+    grid-column: 1 / -1;
+    justify-self: start;
+    margin-top: 0.5rem;
+  }
+}
