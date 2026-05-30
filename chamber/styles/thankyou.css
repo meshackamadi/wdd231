@@ -1,0 +1,67 @@
+
+    .thankyou-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 24px;
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+    .summary-grid {
+      background: var(--bg-light);
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .summary-item {
+      display: flex;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .summary-item:last-child {
+      border-bottom: none;
+    }
+    .summary-label {
+      font-weight: 700;
+      width: 35%;
+      color: var(--primary-dark);
+    }
+    .summary-value {
+      width: 65%;
+      color: var(--text-dark);
+      word-break: break-word;
+    }
+    .thankyou-icon {
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .btn-home {
+      display: inline-block;
+      background: var(--primary-dark);
+      color: white;
+      padding: 0.75rem 1.8rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: transform 0.2s;
+    }
+    .btn-home:hover {
+      transform: translateY(-2px);
+      background: #1e3a6b;
+    }
+    .no-data-message {
+      text-align: center;
+      color: var(--text-muted);
+      padding: 1rem;
+    }
+    @media (max-width: 640px) {
+      .summary-item {
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+      .summary-label, .summary-value {
+        width: 100%;
+      }
+    }
