@@ -1,0 +1,419 @@
+/* ============================================
+   PROFESSIONAL SITE PLAN CSS
+   Urban Pedal Project | Color Scheme & Typography
+   External stylesheet separated from HTML
+   ============================================ */
+
+/* ---------- RESET & GLOBAL ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9F6EF;   /* Soft Cream - background color from scheme */
+    color: #1E2F2F;              /* Deep Teal-Gray - primary text color */
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    padding: 2rem 1.5rem;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+.plan-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 2.5rem 2.5rem 2.8rem 2.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    .plan-container {
+        padding: 1.5rem;
+    }
+}
+
+/* ---------- TYPOGRAPHY: HEADINGS (Playfair Display) ---------- */
+h1, h2, h3, h4, .site-name, .section-title, .wireframe-device {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #1E5F5F;              /* Forest Teal - primary heading color */
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin: 0 0 1rem 0;
+}
+
+h3 {
+    font-size: 1.35rem;
+    margin: 1rem 0 0.75rem 0;
+}
+
+.section-title {
+    border-left: 5px solid #E3A56D;   /* Warm Terracotta accent */
+    padding-left: 1rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.85rem;
+}
+
+/* ---------- SITE HEADER & NAME ---------- */
+.site-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #E3A56D;
+}
+
+.site-name-group {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.site-name {
+    font-size: 2.8rem;
+    margin: 0;
+    color: #1E5F5F;
+    font-weight: 700;
+}
+
+.domain-badge {
+    font-family: 'JetBrains Mono', monospace;
+    background: #F2E8DD;
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    color: #1E5F5F;
+    font-weight: 500;
+}
+
+.name-rationale {
+    color: #1E2F2F;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.name-rationale strong {
+    color: #1E5F5F;
+}
+
+/* ---------- SECTIONS ---------- */
+.plan-section {
+    margin-bottom: 2.5rem;
+}
+
+.section-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #1E2F2F;
+}
+
+/* ---------- SCENARIOS GRID ---------- */
+.scenarios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.scenario-card {
+    flex: 1;
+    min-width: 240px;
+    background: #F9F6EF;
+    border-radius: 1.2rem;
+    padding: 1.25rem;
+    display: flex;
+    gap: 1rem;
+    transition: all 0.2s ease;
+    border: 1px solid #EAE3D8;
+}
+
+.scenario-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border-color: #E3A56D;
+}
+
+.scenario-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.scenario-content {
+    flex: 1;
+}
+
+.scenario-question {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: #1E5F5F;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.scenario-content p {
+    color: #1E2F2F;
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+/* ---------- COLOR PALETTE DISPLAY ---------- */
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin: 1.2rem 0 1rem;
+}
+
+.color-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #F9F6EF;
+    padding: 0.75rem 1.2rem;
+    border-radius: 60px;
+    flex: 1;
+    min-width: 200px;
+    border: 1px solid #EAE3D8;
+}
+
+.color-swatch {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.swatch-primary {
+    background-color: #1E5F5F;
+}
+
+.swatch-accent {
+    background-color: #E3A56D;
+}
+
+.swatch-background {
+    background-color: #F9F6EF;
+    border: 1px solid #D1C9BC;
+}
+
+.swatch-text {
+    background-color: #1E2F2F;
+}
+
+.color-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-info strong {
+    color: #1E5F5F;
+    font-size: 0.9rem;
+}
+
+.color-info span {
+    font-size: 0.75rem;
+    color: #5a6e6e;
+    margin-top: 0.2rem;
+}
+
+.usage-note {
+    background: #F2E8DD;
+    padding: 0.8rem 1.2rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    color: #1E2F2F;
+    margin-top: 0.75rem;
+    border-left: 4px solid #E3A56D;
+}
+
+/* ---------- TYPOGRAPHY SHOWCASE ---------- */
+.typography-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.type-card {
+    flex: 1;
+    background: #F9F6EF;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    border: 1px solid #EAE3D8;
+}
+
+.type-sample {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.playfair-demo {
+    font-family: 'Playfair Display', serif;
+    color: #1E5F5F;
+}
+
+.inter-demo {
+    font-family: 'Inter', sans-serif;
+    color: #1E5F5F;
+}
+
+.jetbrains-demo {
+    font-family: 'JetBrains Mono', monospace;
+    color: #1E5F5F;
+}
+
+.type-usage {
+    font-size: 0.85rem;
+    color: #1E2F2F;
+    line-height: 1.4;
+}
+
+/* ---------- WIREFRAME SECTION ---------- */
+.wireframe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1.5rem 0 1rem;
+    justify-content: center;
+}
+
+.wireframe-card {
+    flex: 1;
+    min-width: 280px;
+    background: #FEFCF8;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    padding: 1.2rem;
+    transition: all 0.2s;
+    border: 1px solid #EDE6DB;
+}
+
+.wireframe-device {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.wireframe-svg-container {
+    background: #FFFFFF;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    box-shadow: inset 0 0 0 1px #F0E7DC, 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.wireframe-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.wireframe-caption {
+    text-align: center;
+    margin-top: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #1E5F5F;
+    background: #F2E8DD;
+    display: inline-block;
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    border-radius: 40px;
+}
+
+.wireframe-note {
+    margin-top: 1.2rem;
+    background: #F9F6EF;
+    padding: 0.8rem 1.2rem;
+    border-radius: 1rem;
+    font-size: 0.88rem;
+    color: #1E2F2F;
+    border-left: 4px solid #E3A56D;
+}
+
+/* ---------- LIVING DOCUMENT NOTE ---------- */
+.living-doc-note {
+    background: linear-gradient(135deg, #F2E8DD 0%, #F9F6EF 100%);
+    border-radius: 1.2rem;
+    padding: 1.2rem 1.8rem;
+    margin: 2rem 0 1rem;
+    border: 1px solid #E3A56D40;
+}
+
+.living-doc-note p {
+    margin: 0;
+    font-style: italic;
+    color: #1E2F2F;
+    font-size: 0.92rem;
+}
+
+/* ---------- FOOTER ---------- */
+.plan-footer {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #5a6e6e;
+    border-top: 1px solid #EADDCB;
+    padding-top: 1.5rem;
+}
+
+/* ---------- UTILITIES & RESPONSIVE ---------- */
+@media (max-width: 800px) {
+    .site-name {
+        font-size: 2rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .color-card {
+        min-width: 100%;
+    }
+    .wireframe-card {
+        min-width: 100%;
+    }
+    .scenario-card {
+        flex-direction: column;
+        text-align: left;
+    }
+    .scenario-icon {
+        font-size: 1.8rem;
+    }
+}
+
+/* Print-friendly adjustments (optional professional touch) */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+    .plan-container {
+        box-shadow: none;
+        padding: 0.5rem;
+    }
+    .scenario-card, .type-card, .color-card {
+        break-inside: avoid;
+    }
+}
