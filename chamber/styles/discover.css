@@ -1,0 +1,244 @@
+/* styles/discover.css - Additional styles for discover page */
+
+/* Visitor Message Styling */
+.visitor-message {
+  background: linear-gradient(135deg, var(--primary-dark), #1e3a6b);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: var(--shadow-sm);
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-text {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.close-message {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.close-message:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* Attractions Grid Container */
+.attractions-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* Attraction Card Styling */
+.attraction-card {
+  background: var(--card-white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.attraction-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.attraction-card h2 {
+  font-size: 1.3rem;
+  padding: 1rem 1rem 0 1rem;
+  margin: 0;
+  color: var(--primary-dark);
+}
+
+.attraction-card figure {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.attraction-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+/* Hover effect for desktop only (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .attraction-card img {
+    transition: transform 0.4s ease, filter 0.3s ease, brightness 0.3s;
+  }
+  
+  .attraction-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.05) contrast(1.1);
+    cursor: pointer;
+  }
+}
+
+.attraction-card address {
+  padding: 0.5rem 1rem;
+  font-style: normal;
+  color: var(--primary-accent);
+  font-weight: 500;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.attraction-card address::before {
+  content: "📍";
+  font-size: 0.9rem;
+}
+
+.attraction-card .description {
+  padding: 0 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.learn-btn {
+  margin: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: linear-gradient(135deg, var(--primary-dark), #1e3a6b);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  align-self: flex-start;
+}
+
+.learn-btn:hover {
+  transform: translateY(-2px);
+  background: var(--primary-dark);
+}
+
+.loading-grid {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* ============================================
+   GRID AREA LAYOUTS - SMALL (320px to 640px)
+   Cards stack vertically in a single column
+============================================ */
+@media (min-width: 320px) and (max-width: 640px) {
+  .attractions-grid {
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8";
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   GRID AREA LAYOUTS - MEDIUM (641px to 1024px)
+   2-column layout with specific arrangement
+   Using named grid areas for unique positioning
+============================================ */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .attractions-grid {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* ============================================
+   GRID AREA LAYOUTS - LARGE (1025px and above)
+   4-column creative layout with asymmetric zones
+   Not just simple columns - uses varied placement
+============================================ */
+@media (min-width: 1025px) {
+  .attractions-grid {
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.8rem;
+  }
+  
+  /* Additional hover enhancement for cards */
+  .attraction-card {
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  }
+}
+
+/* ============================================
+   Assign grid-area names to each card dynamically
+   These classes are added by JavaScript
+============================================ */
+.card-1 { grid-area: card1; }
+.card-2 { grid-area: card2; }
+.card-3 { grid-area: card3; }
+.card-4 { grid-area: card4; }
+.card-5 { grid-area: card5; }
+.card-6 { grid-area: card6; }
+.card-7 { grid-area: card7; }
+.card-8 { grid-area: card8; }
+
+/* Responsive adjustments for main content */
+.discover-main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .discover-main {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .discover-main {
+    padding: 2rem;
+  }
+}
