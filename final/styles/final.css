@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.5;
     background: #fefae0;
     color: #283618;
