@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="ShareSpoon connects households and restaurants with surplus food to people who need it. Reduce waste, fight hunger locally.">
+    <meta name="author" content="Meshack Amadi">
+    <meta property="og:title" content="ShareSpoon - Local Food Waste Exchange">
+    <meta property="og:description" content="Share surplus food, not waste. Join the movement to fight hunger and reduce food waste.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourdomain.com/images/og-share.jpg">
+    <title>ShareSpoon | Home – Stop Waste, Start Sharing</title>
+    <!-- Primary favicon (SVG) and inline-data fallback for browsers that prefer data URIs -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.ico">
+    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%232F855A'/><g transform='translate(12,12) scale(0.8)'><path d='M20 6c3 0 6 2 6 5s-3 5-6 5-6-2-6-5 3-5 6-5z' fill='%23fff'/><rect x='25' y='3' width='6' height='26' rx='3' transform='rotate(30 28 16)' fill='%23fff'/></g></svg>'>
+    <link rel="shortcut icon" href="images/sharingspoon_white_logo.png" type="image/png">
+    <link rel="stylesheet" href="styles/final.css">
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="home-link" aria-label="Home">
+                <img src="images/sharingspoon_logo.jpg" alt="ShareSpoon spoon logo" width="48" height="48">
+                <span>ShareSpoon</span>
+            </a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="listings.html" aria-current="false">Listings</a></li>
+                <li><a href="resources.html" aria-current="false">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Donate Extra Food. Feed Your Neighborhood.</h1>
+            <p>List surplus meals or ingredients and safely connect with neighbors who can pick them up.</p>
+            <img src="images/hero.svg" alt="Illustration of a neighbor donating food to another" class="hero-illustration" loading="lazy">
+            <a href="listings.html" class="cta-button">See Available Food</a>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How ShareSpoon Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">🍽️</div>
+                    <h3>1. Post</h3>
+                    <p>Restaurants or households share surplus food.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">🤝</div>
+                    <h3>2. Claim</h3>
+                    <p>Neighbors request available items.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">🚚</div>
+                    <h3>3. Pickup</h3>
+                    <p>Safely coordinate local pickup.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="impact">
+            <h2>Our Impact So Far</h2>
+            <div class="stats" id="impact-stats">
+                <!-- Dynamic stats loaded via JS -->
+                <p>Loading impact data...</p>
+            </div>
+        </section>
+
+        <!-- HTML Form (leads to submit.html) -->
+        <section class="contact-form">
+            <h2>Join as a Partner</h2>
+            <form action="submit.html" method="GET" id="partner-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="type">I am a:</label>
+                <select id="type" name="type" required>
+                    <option value="household">Household</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="ngo">NGO</option>
+                </select>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 ShareSpoon – Local Food Waste Exchange</p>
+        <img src="images/partner-badge.svg" alt="Partner badge" width="120" height="40" loading="lazy">
+        <a href="attributions.html">Attributions</a>
+        <a href="#" id="reset-prefs">Reset Preferences</a>
+        <p><a href="https://www.loom.com/share/aeaa9b31c61f476dacb0f6295f87471d" target="_blank">📹 Watch Project Video</a></p>
+    </footer>
+</body>
+</html>

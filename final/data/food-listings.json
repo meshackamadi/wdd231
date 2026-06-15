@@ -1,0 +1,27 @@
+[
+  {"id":1,"title":"Fresh Vegetables Pack","type":"Household","description":"Assorted tomatoes, cucumbers, and lettuce. Washed and bagged.","expires":"2026-06-18","location":"Maple St","donor":"Smith Family","contact":"text","image":null},
+  {"id":2,"title":"Sourdough Loaves","type":"Restaurant","description":"Two unsliced sourdough loaves from local bakery.","expires":"2026-06-16","location":"Main St Bakery","donor":"Daily Loaf","contact":"call ahead","image":null},
+  {"id":3,"title":"Mixed Fruit Box","type":"Household","description":"Apples, bananas, and oranges. Great for snacks.","expires":"2026-06-17","location":"Elm Ave","donor":"Garcia Household","contact":"text","image":null},
+  {"id":4,"title":"Prepared Sandwiches (6)","type":"Restaurant","description":"Individually wrapped sandwiches, ready to eat.","expires":"2026-06-15","location":"Corner Deli","donor":"Corner Deli","contact":"call","image":null},
+  {"id":5,"title":"Assorted Baked Goods","type":"Restaurant","description":"Muffins and cookies, packaged.","expires":"2026-06-16","location":"Sunrise Bakery","donor":"Sunrise Bakery","contact":"email","image":null},
+  {"id":6,"title":"Canned Goods Bundle","type":"Household","description":"Canned beans, tomatoes, and soups.","expires":"2027-01-01","location":"Oak St","donor":"Lee Family","contact":"text","image":null},
+  {"id":7,"title":"Cooked Rice (3 containers)","type":"Restaurant","description":"Freshly cooked rice, sealed containers.","expires":"2026-06-15","location":"Noodle House","donor":"Noodle House","contact":"call","image":null},
+  {"id":8,"title":"Salad Packs (4)","type":"Restaurant","description":"Pre-packed salads with dressing on side.","expires":"2026-06-16","location":"Green Eats","donor":"Green Eats","contact":"call","image":null},
+  {"id":9,"title":"Pasta Tray","type":"Household","description":"Large baked pasta tray, serves 6-8.","expires":"2026-06-18","location":"Pine Rd","donor":"Carter Household","contact":"text","image":null},
+  {"id":10,"title":"Fruit Smoothies (3)","type":"Restaurant","description":"Fresh smoothies in sealed cups.","expires":"2026-06-15","location":"Juice Bar","donor":"Juice Bar","contact":"call","image":null},
+  {"id":11,"title":"Box of Eggs (12)","type":"Household","description":"Fresh eggs from small farm.","expires":"2026-06-20","location":"Willow Ln","donor":"Nguyen Family","contact":"text","image":null},
+  {"id":12,"title":"Leftover Catering (cold)","type":"Restaurant","description":"Cold sandwiches and salads from event.","expires":"2026-06-15","location":"Event Hall","donor":"Catering Co.","contact":"call","image":null},
+  {"id":13,"title":"Bulk Rice Bags","type":"Restaurant","description":"Two 5kg bags of rice unopened.","expires":"2028-01-01","location":"Wholesale Rd","donor":"Wholesale Store","contact":"email","image":null},
+  {"id":14,"title":"Bottled Juice Case","type":"Household","description":"Variety pack of bottled juices.","expires":"2026-08-01","location":"Cedar Ct","donor":"Harris Household","contact":"text","image":null},
+  {"id":15,"title":"Cooked Beans (2 containers)","type":"Restaurant","description":"Seasoned cooked beans, sealed.","expires":"2026-06-16","location":"Taco Spot","donor":"Taco Spot","contact":"call","image":null},
+  {"id":16,"title":"Vegetable Soup (large)","type":"Household","description":"Hearty vegetable soup in sealed containers.","expires":"2026-06-17","location":"Birch Dr","donor":"O'Connor Household","contact":"text","image":null},
+  {"id":17,"title":"Sliced Cake (8 slices)","type":"Restaurant","description":"Pre-sliced cake in box.","expires":"2026-06-16","location":"Pastry Corner","donor":"Pastry Corner","contact":"call","image":null},
+  {"id":18,"title":"Bag of Potatoes","type":"Household","description":"5kg bag of potatoes, dry and stored.","expires":"2027-03-01","location":"Spruce St","donor":"Diaz Family","contact":"text","image":null},
+  {"id":19,"title":"Assorted Cheese Pack","type":"Restaurant","description":"Sealed assorted cheese portions.","expires":"2026-06-20","location":"Cheese Shop","donor":"Cheese Shop","contact":"email","image":null},
+  {"id":20,"title":"Leftover Pizza (3 boxes)","type":"Restaurant","description":"Whole pizzas, boxed.","expires":"2026-06-15","location":"Pizza Place","donor":"Pizza Place","contact":"call","image":null}
+]
+[
+  { "id":1,"title":"Fresh Veggies","type":"Household","description":"Tomatoes, lettuce, cucumbers","expires":"2025-06-18","location":"Maple St","donor":"Family Smith","contact":"text only","image":"veg.webp" },
+  { "id":2,"title":"Bread Loaf","type":"Restaurant","description":"Sourdough, unsliced","expires":"2025-06-15","location":"Main St Bakery","donor":"Daily Loaf","contact":"call ahead","image":"bread.webp" },
+  ... (repeat to 20 items)
+]

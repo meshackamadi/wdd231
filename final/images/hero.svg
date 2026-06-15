@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-label="Illustration: neighbor donating food to another">
+  <title>ShareSpoon — donating food illustration</title>
+  <rect width="800" height="300" fill="transparent"/>
+  <!-- simple, lightweight scene: two people and a shared box/bowl -->
+  <g transform="translate(80,50)">
+    <!-- ground rounded -->
+    <ellipse cx="280" cy="170" rx="300" ry="60" fill="#F6FFF5" stroke="#E6F4EB"/>
+
+    <!-- donor figure (left) -->
+    <g transform="translate(120,40)">
+      <circle cx="32" cy="24" r="20" fill="#FAD4A5"/>
+      <rect x="10" y="48" width="44" height="64" rx="12" fill="#2F855A"/>
+      <!-- arm holding box -->
+      <rect x="46" y="72" width="72" height="18" rx="8" fill="#BEE3C9" transform="rotate(-12 46 72)"/>
+    </g>
+
+    <!-- recipient figure (right) -->
+    <g transform="translate(360,40)">
+      <circle cx="32" cy="24" r="20" fill="#FFD6E0"/>
+      <rect x="10" y="48" width="44" height="64" rx="12" fill="#E76F51"/>
+      <!-- receiving hands -->
+      <rect x="-12" y="78" width="72" height="18" rx="8" fill="#FFE8D6" transform="rotate(12 0 78)"/>
+    </g>
+
+    <!-- shared box in center -->
+    <g transform="translate(260,90)">
+      <rect x="0" y="0" width="120" height="64" rx="10" fill="#fff" stroke="#E6E6E6"/>
+      <path d="M12 18c10-8 28-8 38 0" stroke="#2a9d8f" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <text x="60" y="42" font-family="Segoe UI, Roboto, Arial" font-size="14" fill="#2a9d8f" text-anchor="middle">For Neighbors</text>
+    </g>
+  </g>
+</svg>
