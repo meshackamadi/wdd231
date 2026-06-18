@@ -135,6 +135,13 @@ h2 {
   transition: transform 0.2s;
 }
 
+/* Ensure about and photo sections use full width and consistent box-sizing */
+.about-card,
+.photo-section {
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .about-card p {
   color: #2C3E50;
   line-height: 1.6;
@@ -178,10 +185,11 @@ h2 {
   background: white;
   border-radius: 12px;
   padding: 1.5rem;
-  margin: 0 auto 1.5rem auto;
+  margin: 0 0 1.5rem 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   text-align: center;
-  max-width: 900px;
+  max-width: none;
+  width: 100%;
 }
 
 .filter-buttons {
