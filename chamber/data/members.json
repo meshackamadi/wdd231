@@ -5,7 +5,7 @@
       "address": "123 Digital Ave, Silicon Valley, CA",
       "phone": "(555) 123-4567",
       "website": "www.techhubpro.com",
-      "image": "techhub.jpg",
+      "image": "mesh-hub-logo.png",
       "membershipLevel": 3
     },
     {
@@ -13,7 +13,7 @@
       "address": "456 Repair Ln, Austin, TX",
       "phone": "(555) 234-5678",
       "website": "www.gadgetfix.com",
-      "image": "gadgetfix.jpg",
+      "image": "mesh-hub-logo.png",
       "membershipLevel": 2
     },
     {
@@ -21,7 +21,7 @@
       "address": "789 Wireless Blvd, Seattle, WA",
       "phone": "(555) 345-6789",
       "website": "www.mobilemasters.com",
-      "image": "mobilemasters.jpg",
+      "image": "mesh-hub-logo.png",
       "membershipLevel": 3
     },
     {
@@ -29,7 +29,7 @@
       "address": "101 Computing Cir, Boston, MA",
       "phone": "(555) 456-7890",
       "website": "www.laptoploft.com",
-      "image": "laptoploft.jpg",
+      "image": "mesh-hub-logo.png",
       "membershipLevel": 1
     },
     {
@@ -37,7 +37,7 @@
       "address": "202 Device Dr, Chicago, IL",
       "phone": "(555) 567-8901",
       "website": "www.accessoryworld.com",
-      "image": "accessoryworld.jpg",
+      "image": "mesh-hub-logo.png",
       "membershipLevel": 2
     },
     {
@@ -45,7 +45,7 @@
       "address": "303 Display St, Denver, CO",
       "phone": "(555) 678-9012",
       "website": "www.screensavers.com",
-      "image": "screensavers.jpg",
+      "image": "mesh-hub-logo.png",
       "membershipLevel": 1
     }
   ]
