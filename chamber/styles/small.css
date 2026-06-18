@@ -148,6 +148,11 @@ h1 {
   flex-wrap: wrap;
 }
 
+/* Helper: ensure view-controls span full grid when used inside the main layout */
+.view-controls {
+  grid-column: 1 / -1;
+}
+
 .view-btn {
   background-color: white;
   border: 2px solid var(--primary-dark);
@@ -189,6 +194,13 @@ h1 {
   transition: var(--transition);
   display: flex;
   flex-direction: column;
+}
+
+/* Full-width helper used for loading/error states inside grids */
+.full-width {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
 }
 
 .course-card:hover {
@@ -250,6 +262,15 @@ h1 {
   background-color: var(--primary-light);
 }
 
+/* Small adjustments for event cards and spotlights spacing */
+.event-card + .event-card {
+  margin-top: 1rem;
+}
+
+.spotlights-section {
+  margin-top: 1rem;
+}
+
 /* Card Content */
 .card-content {
   padding: 1.25rem;
@@ -295,6 +316,16 @@ h1 {
 .website-link:hover {
   color: var(--primary-accent);
   border-bottom-color: var(--primary-accent);
+}
+
+/* Spotlights link color and general details */
+.spotlight-detail a {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+.spotlight-detail a:hover {
+  color: var(--primary-accent);
 }
 
 /* Membership Badge */

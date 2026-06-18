@@ -79,8 +79,8 @@ function showLearnMoreModal(attraction) {
       <div class="modal-content">
         <span class="close-modal">&times;</span>
         <h3 id="modalTitle"></h3>
-        <img id="modalImage" src="" alt="" style="width: 100%; border-radius: 12px; margin: 1rem 0;">
-        <p id="modalAddress" style="color: var(--primary-accent); margin: 0.5rem 0;"></p>
+        <img id="modalImage" src="" alt="">
+        <p id="modalAddress"></p>
         <p id="modalDescription"></p>
         <button class="modal-close-btn">Close</button>
       </div>
@@ -136,6 +136,8 @@ function showLearnMoreModal(attraction) {
           cursor: pointer;
           font-weight: 600;
         }
+        #modalImage { width: 100%; border-radius: 12px; margin: 1rem 0; }
+        #modalAddress { color: var(--primary-accent); margin: 0.5rem 0; }
         @keyframes fadeIn {
           from { opacity: 0; }
           to { opacity: 1; }

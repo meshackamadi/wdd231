@@ -42,7 +42,7 @@
     <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">&#9776;</button>
     <nav id="primaryNav">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="discover.html">Discover</a></li>
@@ -54,14 +54,14 @@
     <h1>Member Directory</h1>
     
     <!-- View Toggle Controls -->
-    <div class="view-controls" style="grid-column: 1 / -1; display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 1rem;">
+    <div class="view-controls">
       <button id="gridViewBtn" class="view-btn active-view" aria-label="Grid view">📱 Grid View</button>
       <button id="listViewBtn" class="view-btn" aria-label="List view">📋 List View</button>
     </div>
 
     <!-- Member Cards Container - uses courses-grid styling from existing CSS -->
     <div id="membersContainer" class="courses-grid">
-      <div class="course-card" style="grid-column: 1 / -1; text-align: center; padding: 2rem;">Loading innovative businesses...</div>
+      <div class="course-card full-width">Loading innovative businesses...</div>
     </div>
   </main>
 
@@ -79,7 +79,7 @@
     <div class="footer-modified">
       <p id="lastModified"></p>
     </div>
-    <p class="contact" style="margin-top: 0.5rem; font-size: 0.85rem;">📧 hello@gadgetchamber.com | 📞 +1 (555) 724-6823</p>
+    <p class="contact">📧 hello@gadgetchamber.com | 📞 +1 (555) 724-6823</p>
   </footer>
 
   <!-- JSON Data will be fetched and displayed by directory.js -->

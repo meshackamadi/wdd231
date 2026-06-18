@@ -34,7 +34,7 @@ function renderSpotlights() {
         <h3>${m.name}</h3>
         <div class="spotlight-detail">📍 ${m.address}</div>
         <div class="spotlight-detail">📞 ${m.phone}</div>
-        <div class="spotlight-detail">🌐 <a href="https://${m.website}" target="_blank" style="color: var(--primary-dark);">${m.website}</a></div>
+        <div class="spotlight-detail">🌐 <a href="https://${m.website}" target="_blank">${m.website}</a></div>
         <span class="membership-badge ${levelClass}">${levelText}</span>
       </div>
     `;
